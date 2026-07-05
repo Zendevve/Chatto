@@ -54,6 +54,28 @@ function Chatto:FilterMessage(chatFrame, text, r, g, b, chatID, ...)
 	return text, r, g, b
 end
 
+-- Hook a Blizzard ChatFrame to intercept its AddMessage calls
+local hookedFrames = {}
+function Chatto:HookChatFrame(chatFrame)
+	if not chatFrame or not chatFrame.AddMessage then return end
+	if hookedFrames[chatFrame] then return end
+	hookedFrames[chatFrame] = true
+
+	self:RawHook(chatFrame, "AddMessage", function(frame, text, r, g, b, chatID, ...)
+		if text ~= nil then
+			local filtered, newR, newG, newB = self:FilterMessage(frame, text, r, g, b, chatID, ...)
+			if filtered == nil then
+				return -- Suppressed
+			end
+			text = filtered
+			r = newR or r
+			g = newG or g
+			b = newB or b
+		end
+		self.hooks[frame].AddMessage(frame, text, r, g, b, chatID, ...)
+	end, true)
+end
+
 -- Default Settings
 local defaults = {
 	profile = {
