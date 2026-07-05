@@ -1,0 +1,10 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+	<Script file="AltNames.lua"/>
+	<Script file="AltClickInvite.lua"/>
+	<Script file="WordHighlight.lua"/>
+	<Script file="StickyChannels.lua"/>
+	<Script file="TellTarget.lua"/>
+	<Script file="Timestamps.lua"/>
+	<Script file="UrlCopy.lua"/>
+</Ui>

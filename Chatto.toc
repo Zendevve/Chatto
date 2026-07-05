@@ -1,0 +1,51 @@
+## Interface: 30300
+## Title: |cffDFBA69Chatto|r
+## Notes: The definitive chat addon, combining elegant layout styling, consolidated message filtering, and advanced quality-of-life utilities.
+## Version: 1.0.0
+## Author: Zendevve
+## SavedVariables: ChattoDB
+
+# Libraries
+Embeds.xml
+
+# Localization
+Locale\enUS.lua
+
+# Core
+Core\Core.lua
+Core\Utils.lua
+Core\Colors.lua
+Core\Options.lua
+
+# Filters
+Filters\Filters.xml
+Filters\Money.lua
+Filters\Loot.lua
+Filters\Experience.lua
+Filters\Reputation.lua
+Filters\Quests.lua
+Filters\Spells.lua
+Filters\Status.lua
+Filters\GuildStatus.lua
+Filters\Blacklist.lua
+
+# Layouts
+Layouts\Classic.lua
+Layouts\Glass\Glass.lua
+Layouts\Glass\UIManager.lua
+Layouts\Glass\Container.lua
+Layouts\Glass\Dock.lua
+Layouts\Glass\Tab.lua
+Layouts\Glass\MessageLine.lua
+Layouts\Glass\MessageFrame.lua
+Layouts\Glass\EditBox.lua
+
+# Utilities
+Utilities\Utilities.xml
+Utilities\AltNames.lua
+Utilities\AltClickInvite.lua
+Utilities\WordHighlight.lua
+Utilities\StickyChannels.lua
+Utilities\TellTarget.lua
+Utilities\Timestamps.lua
+Utilities\UrlCopy.lua
