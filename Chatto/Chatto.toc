@@ -41,7 +41,6 @@ Layouts\Glass\MessageFrame.lua
 Layouts\Glass\EditBox.lua
 
 # Utilities
-Utilities\Utilities.xml
 Utilities\AltNames.lua
 Utilities\AltClickInvite.lua
 Utilities\WordHighlight.lua
